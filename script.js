@@ -23,13 +23,13 @@ function drawBar(ctx, upperLeftCornerX, upperLeftCornerY, width, height,color)
     ctx.restore();
 }
 
-var myDaddies = {
-    "Joe": 20,
-    "Jackson": 22,
-    "Jerimiah": 20,
-    "Kevin": 21,
-    "Travis": 20,
-    "Austin": 21
+var myData = {
+    "First": 20,
+    "Second": 22,
+    "Third": 20,
+    "Fourth": 21,
+    "Fifth": 20,
+    "Sixth": 21
 };
 
 var Barchart = function(options){
@@ -119,12 +119,12 @@ var Barchart = function(options){
 var myBarchart = new Barchart(
     {
         canvas:myCanvas,
-        seriesName:"myDaddies",
+        seriesName:"myData",
         padding:20,
         gridScale:5,
         gridColor:"#eeeeee",
-        data:myDaddies,
-        colors:["#a55ca5","#67b6c7", "#bccd7a","#eb9743"]
+        data:myData,
+        colors:['blue','red', 'green','silver', 'gold']
     }
 );
 myBarchart.draw();
